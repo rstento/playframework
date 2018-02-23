@@ -11,7 +11,7 @@ This section covers the core tutorials and examples from Play.  These are mainta
 
 **All of the following projects can be downloaded as example projects from the [download page](https://playframework.com/download).**
 
-### Play Seeds
+<!-- ### Play Seeds
 
 There are two Play Seeds that are designed expressly for getting started with new Play applications.  They contain a hello world controller and view template, filters, and nothing else.
 
@@ -42,74 +42,10 @@ For people using Play for the first time, there is a starter project which intro
 * [play-scala](https://github.com/playframework/play-scala)
 
 or you can download it as an example project from the [download page](https://playframework.com/download).
+-->
 
-### Database / ORM Access
 
-Play is non-opinionated about database access, and integrates with many object relational layers (ORMs).  There is out of the box support for Anorm, Ebean, Slick, and JPA, but many customers use NoSQL or REST layers and there are many examples of Play using other ORMs not mentioned here.
 
-#### Slick
-
-[Slick](http://slick.lightbend.com/docs/) is a Functional Relational Mapping (FRM) library for Scala that makes it easy to work with relational databases. It allows you to work with stored data almost as if you were using Scala collections while at the same time giving you full control over when a database access happens and which data is transferred. You can also use SQL directly. Execution of database actions is done asynchronously, making Slick a perfect fit for your reactive applications based on Play and Akka.
-
-* [play-isolated-slick](https://github.com/playframework/play-isolated-slick): This template uses a multi-module that hides Slick 3.x behind an API layer, and does not use Play-Slick integration.  It also contains sbt-flyways and use Slick's code generator to create the Slick binding from SQL tables.
-* [play-scala-intro](https://github.com/playframework/play-scala-intro): This template uses [Play Slick](https://www.playframework.com/documentation/%PLAY_VERSION%/PlaySlick) as part of a single Play project.
-* [Computer Database with Play-Slick](https://github.com/playframework/play-slick/tree/master/samples/computer-database): This template uses [Play Slick](https://www.playframework.com/documentation/%PLAY_VERSION%/PlaySlick).  You will need to clone the `play-slick` project from Github and type `project computer-database-sample` in SBT to get to the sample project.
-
-#### JPA
-
-This is a example template showing Play with Java Persistence API (JPA), using Hibernate Entity Manager.  It is included in the Play project itself.
-
-* [play-java-intro](https://github.com/playframework/play-java-intro)
-
-#### Anorm
-
-This is an example template showing Play with [Anorm](https://github.com/playframework/anorm) using Play's [Anorm Integration](https://www.playframework.com/documentation/latest/ScalaAnorm).  It also uses [Play-Bootstrap](https://adrianhurt.github.io/play-bootstrap/) for easy template scaffolding.
-
-* [playframework/play-anorm](https://github.com/playframework/play-anorm)
-
-#### Ebean
-
-This is an example template that uses [Ebean](https://ebean-orm.github.io/) using Play's [Ebean integration](https://www.playframework.com/documentation/%PLAY_VERSION%/JavaEbean). It also uses [Play-Bootstrap](https://adrianhurt.github.io/play-bootstrap/) for easy template scaffolding.
-
-* [playframework/play-ebean-example](https://github.com/playframework/play-ebean-example)
-
-### Comet / Server Sent Events (SSE)
-
-This is an example template that shows streaming responses through Comet or Server Sent Events, using Akka Streams:
-
-* [playframework/play-streaming-scala](https://github.com/playframework/play-streaming-scala)
-* [playframework/play-streaming-java](https://github.com/playframework/play-streaming-java)
-
-### WebSocket
-
-This is an example template that shows bidirectional streaming through the WebSocket API, using Akka Streams:
-
-* [playframework/play-websocket-scala](https://github.com/playframework/play-websocket-scala)
-* [playframework/play-websocket-java](https://github.com/playframework/play-websocket-java)
-
-### Cryptography
-
-This is an example template showing how to encrypt and sign data securely with [Kalium](https://github.com/abstractj/kalium):
-
-* [playframework/play-kalium](https://github.com/playframework/play-kalium)
-
-### Compile Time Dependency Injection
-
-[[Compile time dependency injection|ScalaCompileTimeDependencyInjection]] can be done in Play in a number of different DI frameworks.
-
-There are two examples shown here, but there are other compile time DI frameworks such as Scaldi, which has [Play integration](http://scaldi.org/learn/#play-integration) built in, and [Dagger 2](https://google.github.io/dagger/), which is written in Java.
-
-#### Manual Compile Time Dependency Injection
-
-This is an example template showing how to use manual compile time dependency injection and manual routing with the [[SIRD router|ScalaSirdRouter]], useful for minimal REST APIs and people used to Spray style routing:
-
-* [playframework/play-scala-compile-di-with-tests](https://github.com/playframework/play-scala-compile-di-with-tests)
-
-#### Macwire Dependency Injection
-
-This is an example template showing compile time dependency injection using [Macwire](https://github.com/adamw/macwire).
-
-* [playframework/play-macwire-di](https://github.com/playframework/play-macwire-di)
 
 ## Third Party Tutorials and Templates
 
