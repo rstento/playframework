@@ -1,9 +1,9 @@
 <!--- Copyright (C) 2009-2017 Lightbend Inc. <https://www.lightbend.com> -->
 # Using sbt with Play
 
-You can manage the complete development cycle of a Play application with `sbt`. The `sbt` tool has an interactive mode or allows you to enter commands one at a time. Interactive mode can be faster over time because `sbt` only needs to start once. When you enter commands one at a time, `sbt` restarts each time you run it.
+You can manage the complete development cycle of a Play application with `sbt`. The `sbt` tool has an interactive mode or you can enter commands one at a time. Interactive mode can be faster over time because `sbt` only needs to start once. When you enter commands one at a time, `sbt` restarts each time you run it.
 
-Note: If your proxy requires a username and password for authentication, you need to add system properties when invoking sbt: 
+**Note:** If your proxy requires a username and password for authentication, you need to add system properties when invoking sbt: 
 
 ```./sbt -Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080 -Dhttp.proxyUser=username -Dhttp.proxyPassword=mypassword -Dhttps.proxyHost=myproxy -Dhttps.proxyPort=8080 -Dhttps.proxyUser=username -Dhttps.proxyPassword=mypassword  
 ```
@@ -13,14 +13,15 @@ The following sections provide examples of how to use:
 * [Single commands](#Single-commands)
 * [Debug with JVM](#Debug-with-the-JVM)
 * [Interactive mode](#Interactive-mode)
-     * [Development mode](#Development-mode)
-     * [Compile only](#Compile-only)
-     * [Testing options](#Testing-options)
-     * [Triggered execution](#Triggered-execution)
-* [Getting help](#Getting-help)
+    * [Getting help](#Getting-help)
+    * [Development mode](#Development-mode)
+    * [Compile only](#Compile-only)
+    * [Testing options](#Testing-options)
+    * [Triggered execution](#Triggered-execution)
+
 
 ## Single commands
-You can run single `sbt` commands directly. For example, to build and run Play, enter `sbt run` from the top level project directory:
+You can run single `sbt` commands directly. For example, to build and run Play, enter `sbt run` from the top level project directory and you should see something like the following:
 
 ```bash
 $ sbt run
@@ -34,7 +35,9 @@ $ sbt run
 (Server started, use Enter to stop and go back to the console...)
 ```
 
-The application starts directly. When you quit the server using `Ctrl+D` or `Enter`, you will come back to your OS prompt.
+The application starts directly. When you quit the server using `Ctrl+D` or `Enter`, the command prompt returns.
+
+For full details, see the [`sbt` documentation](https://www.scala-sbt.org/documentation.html).
 
 ## Debug with the JVM
 
@@ -67,6 +70,15 @@ And you will see something like:
 [info] Done updating.
 [info] Set current project to my-first-app (in build file:/Users/play-developer/my-first-app/)
 [my-first-app] $
+```
+
+
+### Getting help
+
+Use the `help` command to get basic help about the available commands.  To get information about a specific command, append the name, for example in interactive mode:
+
+```bash
+$ help run
 ```
 
 ### Development mode
@@ -194,12 +206,5 @@ Will trigger the execution of `com.acme.SomeClassTest` test every time you modif
 ```bash
 $ sbt ~run
 ```
-## Getting help
 
-Use the `help` command to get basic help about the available commands.  To get information about a specific command, append the name, for example:
 
-```bash
-$ help run
-```
-
-For full details, see the [`sbt` documentation](https://www.scala-sbt.org/documentation.html).
