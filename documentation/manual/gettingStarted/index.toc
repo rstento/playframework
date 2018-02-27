@@ -2,5 +2,5 @@ Installing:Introduction
 NewApplication:Examples and templates
 Anatomy:Anatomy of a Play application
 PlayConsole:Using sbt with Play
-IDE:Setting-up your preferred IDE
+IDE:Setting up your preferred IDE
 Tutorials:Other resources

@@ -49,7 +49,7 @@ or you can download it as an example project from the [download page](https://pl
 
 ## Third Party Tutorials and Templates -->
 
-The Play community have developed videos, blogs, tutorials and templates that cover aspects of Play from a different angle than the documentation.  Templates listed here are not maintained by the Play team, and so may be out of date.
+The Play community has developed videos, blogs, tutorials and templates that cover aspects of Play from a different angle than the documentation.  Templates listed here are not maintained by the Play team, and so may be out of date.
 
 We recommend that you develop new apps with the latest release of Play. The resources below were created for previous versions, but still contain useful information. The sections group them by Play version: 
 

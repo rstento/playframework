@@ -6,7 +6,7 @@ Play provides example projects and templates to help you get started:
 * To learn more about Play, try out the [example projects](#Using-Play-examples). Each showcases a particular feature or illustrates how to satisfy a common use case.
 * When you are ready to build your own app, use a [template](#Using-templates). A template will set up the appropriate project structure and dev environment for you. 
 
-**Note**: Templates are already configured with [[CSRF|ScalaCsrf]] and [[security headers filters|SecurityHeaders]], whereas example projects are not specifically set up for security out of the box.
+**Note**: Templates are already configured with [[CSRF|ScalaCsrf]] and [[security headers filters|SecurityHeaders]], whereas example projects are not set up for security out of the box.
 
 This page provides information on:
 

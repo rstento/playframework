@@ -1,7 +1,7 @@
 <!--- Copyright (C) 2009-2017 Lightbend Inc. <https://www.lightbend.com> -->
 # Using sbt with Play
 
-The `sbt` build tool allows you to manage a Play application’s complete development cycle. You can use `sbt` in interactive mode or enter commands one at a time. Interactive mode can be faster over time because `sbt` only starts once. When you enter commands one at a time, `sbt` restarts each time you run it.
+You can manage the complete development cycle of a Play application with `sbt`. The `sbt` tool has an interactive mode or allows you to enter commands one at a time. Interactive mode can be faster over time because `sbt` only needs to start once. When you enter commands one at a time, `sbt` restarts each time you run it.
 
 Note: If your proxy requires a username and password for authentication, you need to add system properties when invoking sbt: 
 
