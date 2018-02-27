@@ -12,7 +12,7 @@ This page provides information on:
 
 * [Using Play examples](#Using-Play-examples)
 * [Using templates](#Using-templates)
-* 
+* [Examples by category](#Examples-by-category)
 
 ## Using Play examples
 
