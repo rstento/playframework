@@ -1,16 +1,16 @@
 <!--- Copyright (C) 2009-2017 Lightbend Inc. <https://www.lightbend.com> -->
-# Play Tutorials
+# Other resources
 
-Play's documentation shows the available features and how to use them, but the documentation will not show how to create an application from start to finish.  This is where tutorials and examples come in.
+Play's documentation shows the available features and how to use them, but does not show how to create an application from start to finish.  This is where [[tutorials and examples|NewApplication]] come in.
 
-Tutorials and examples are useful for showing a single application at work, especially when it comes to integrating with other systems such as databases or Javascript frameworks.
+<!-- Tutorials and examples are useful for showing a single application at work, especially when it comes to integrating with other systems such as databases or Javascript frameworks.
 
 ## Play Maintained Seeds and Example Templates
 
 This section covers the core tutorials and examples from Play.  These are maintained by the core Play team, and so will be based on the latest Play release.
 
 **All of the following projects can be downloaded as example projects from the [download page](https://playframework.com/download).**
-
+-->
 <!-- ### Play Seeds
 
 There are two Play Seeds that are designed expressly for getting started with new Play applications.  They contain a hello world controller and view template, filters, and nothing else.
@@ -42,62 +42,54 @@ For people using Play for the first time, there is a starter project which intro
 * [play-scala](https://github.com/playframework/play-scala)
 
 or you can download it as an example project from the [download page](https://playframework.com/download).
--->
 
 
 
 
-## Third Party Tutorials and Templates
 
-The Play community also has a number of tutorials and templates that cover aspects of Play than the documentation can, or has a different angle.  Templates listed here are not maintained by the Play team, and so may be out of date.
+## Third Party Tutorials and Templates -->
 
-This is an incomplete list of several helpful blog posts, and because some of the blog posts have been written a while ago, this section is organized by Play version.
+The Play community have developed videos, blogs, tutorials and templates that cover aspects of Play from a different angle than the documentation.  Templates listed here are not maintained by the Play team, and so may be out of date.
+
+We recommend that you develop new apps with the latest release of Play. The resources below were created for previous versions, but still contain useful information. The sections group them by Play version: 
+
+* [2.5.x](#2.5.x)
+* [2.4.x](#2.4.x)
+* [2.3.x](#2.3.x)
+* [2.2.x](#2.2.x)
 
 ### 2.5.x
+The following resources were created for Play version 2.5.x:
 
-#### Play Framework Tutorial Video Series
+* A tutorial video series by Radix Code provides an initial overview to Play:
 
-A tutorial video series by Radix Code provides an initial overview to Play, walking through initial IDE setup, defining routes, creating a CRUD application, enabling ORM support, and customizing the views with bootstrap.
-
-* [Debug Play Application in IntelliJ IDE](https://www.youtube.com/watch?v=RVKU9JvZmao)
-* [Debug Play Application in Eclipse IDE](https://www.youtube.com/watch?v=f9TQD_V7rLg)
-* [How Routing Works](https://www.youtube.com/watch?v=SnQQYl4xsN8)
-* [Add Support for MySQL in Play](https://www.youtube.com/watch?v=J22fr8gQn2c)
-* [Include Bootstrap and jQuery](https://www.youtube.com/watch?v=XyoZnTBUM5I)
-* [Form Validations](https://www.youtube.com/watch?v=Wec-mbjQsrk)
-* [Creating Custom Error Pages](https://www.youtube.com/watch?v=nhKpMrT2EZA)
-
-#### Dependency Injection
+    * [Debug Play Application in IntelliJ IDE](https://www.youtube.com/watch?v=RVKU9JvZmao)
+    * [Debug Play Application in Eclipse IDE](https://www.youtube.com/watch?v=f9TQD_V7rLg)
+    * [How Routing Works](https://www.youtube.com/watch?v=SnQQYl4xsN8)
+    * [Add Support for MySQL in Play](https://www.youtube.com/watch?v=J22fr8gQn2c)
+    * [Include Bootstrap and jQuery](https://www.youtube.com/watch?v=XyoZnTBUM5I)
+    * [Form Validations](https://www.youtube.com/watch?v=Wec-mbjQsrk)
+    * [Creating Custom Error Pages](https://www.youtube.com/watch?v=nhKpMrT2EZA)
 
 * [Dependency Injection in Play Framework using Scala](http://www.schibsted.pl/2016/04/dependency-injection-play-framework-scala/) by Krzysztof Pado.
 
-#### Akka Streams
+* Loïc Descotte offers two posts on using Play with Akka Streams: [Akka Streams integration in Play Framework 2.5](https://loicdescotte.github.io/posts/play25-akka-streams/) and [Playing with Akka Streams and Twitter](https://loicdescotte.github.io/posts/play-akka-streams-twitter/).
 
-* [Akka Streams integration in Play Framework 2.5](https://loicdescotte.github.io/posts/play25-akka-streams/) by Loïc Descotte.
-* [Playing with Akka Streams and Twitter](https://loicdescotte.github.io/posts/play-akka-streams-twitter/) by Loïc Descotte.
+* [Play Database Application using Slick, Bootstrap](https://www.lightbend.com/activator/template/activator-play-slick-app) showcases best practices and provides a seed for starting with Play &amp; Slick, by [Knoldus](http://www.knoldus.com/home.knol).
 
-#### Database
-
-* [Play Database Application using Slick, Bootstrap](https://www.lightbend.com/activator/template/activator-play-slick-app): This is an example project for showcasing best practices and providing a seed for starting with Play &amp; Slick, By [Knoldus](http://www.knoldus.com/home.knol).
-
-#### Forms and Validators
-
-* [Controller Forms](http://queirozf.com/entries/play2-scala-forms-and-validations): This provides examples of using forms and custom validators within a controller.
-* [Json Validators](http://queirozf.com/entries/fully-customized-json-validator-for-play-framework-2): This guide lists methods of validating json against a customized case class or trait.
-
-#### REST APIs
+* [Controller Forms](http://queirozf.com/entries/play2-scala-forms-and-validations): examples of using forms and custom validators within a controller.
+    
+* [Json Validators](http://queirozf.com/entries/fully-customized-json-validator-for-play-framework-2):  lists methods of validating json against a customized case class or trait.
 
 * [Making a REST API in Play](https://github.com/playframework/play-rest-api), a multi-part guide using the Scala API, by the Lightbend Play Team.
+    
 * [Play API REST Template](https://github.com/adrianhurt/play-api-rest-seed) by Adrianhurt: shows how to implement a complete Json RESTful API with some characteristics such as Authentication Token, pagination, filtering, sorting and searching and optional enveloping.
 
-#### Sub-projects
+* [Play Multidomain Seed](https://github.com/adrianhurt/play-multidomain-seed) by Adrianhurt offers a skeleton for a simple multidomain project (www.myweb.com and admin.myweb.com). It shows you how to use subprojects and how to share common code. It is also ready to use with Webjars, CoffeeScript, LESS, RequireJS, assets Gzip and assets fingerprinting. Check the readme file for more details.
+    
+* [Play Multidomain Auth](https://github.com/adrianhurt/play-multidomain-auth) by Adrianhurt is the second part of play-multidomain-seed project. This project is an example of how to implement an Authentication and Authorization layer using the Silhouette authentication library. It also uses [Play-Bootstrap](https://adrianhurt.github.io/play-bootstrap/) for easy template scaffolding.
 
-* [Play Multidomain Seed](https://github.com/adrianhurt/play-multidomain-seed) by Adrianhurt: tries to be a skeleton for a simple multidomain project (www.myweb.com and admin.myweb.com). It shows you how to use subprojects for that and how to share common code. It is also ready to use with Webjars, CoffeeScript, LESS, RequireJS, assets Gzip and assets fingerprinting. Please, check the readme file for more details.
-* [Play Multidomain Auth](https://github.com/adrianhurt/play-multidomain-auth) by Adrianhurt: this is a second part of play-multidomain-seed project. This project tries to be an example of how to implement an Authentication and Authorization layer using the Silhouette authentication library. It also uses [Play-Bootstrap](https://adrianhurt.github.io/play-bootstrap/) for easy template scaffolding.
-
-#### Upgrading
-
-* [Upgrading from Play 2.3 to Play 2.5](https://www.lucidchart.com/techblog/2017/02/22/upgrading-play-framework-2-3-play-2-5/) by Gregg Hernandez: Learn how to deal with common problems when upgrading to Play 2.5, including maintaining legacy behavior, transitioning to Akka Streams, and implementing compile-time dependency injection.
+* [Upgrading from Play 2.3 to Play 2.5](https://www.lucidchart.com/techblog/2017/02/22/upgrading-play-framework-2-3-play-2-5/) by Gregg Hernandez shows how to deal with common problems when upgrading to Play 2.5, including maintaining legacy behavior, transitioning to Akka Streams, and implementing compile-time dependency injection.
 
 ### 2.4.x
 

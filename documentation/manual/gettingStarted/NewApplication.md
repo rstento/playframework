@@ -1,12 +1,18 @@
 <!--- Copyright (C) 2009-2017 Lightbend Inc. <https://www.lightbend.com> -->
-# Getting started
+# Examples and templates
 
 Play provides example projects and templates to help you get started:
 
 * To learn more about Play, try out the [example projects](#Using-Play-examples). Each showcases a particular feature or illustrates how to satisfy a common use case.
 * When you are ready to build your own app, use a [template](#Using-templates). A template will set up the appropriate project structure and dev environment for you. 
 
-**Note**: Seed templates are already configured with [[CSRF|ScalaCsrf]] and [[security headers filters|SecurityHeaders]], whereas example projects are not specifically set up for security out of the box.
+**Note**: Templates are already configured with [[CSRF|ScalaCsrf]] and [[security headers filters|SecurityHeaders]], whereas example projects are not specifically set up for security out of the box.
+
+This page provides information on:
+
+* [Using Play examples](#Using-Play-examples)
+* [Using templates](#Using-templates)
+* 
 
 ## Using Play examples
 
@@ -46,18 +52,20 @@ sbt new playframework/play-scala-seed.g8
 
 After that, use `sbt run` and then go to http://localhost:9000 to see the running server. If you plan to use forms in your application, enter `sbt g8Scaffold form` to create the scaffold controller, template and tests needed to process a form.
 
-## Overview of available examples
+## Examples by category
 
-The following categorize examples and describe them briefly:
+Both Lightbend [Tech Hub](https://developer.lightbend.com/start/?group=play) and github offer a variety of Play examples. Some are available for different versions of Play. The following sections organize some of these examples by category, describe them briefly, and provide links to Tech Hub, where you can download them as zip files. 
 
 ### ORM layers 
 
 Play examples demonstrate how to use the folloing ORMs:
 
-* [Slick](http://slick.lightbend.com/docs/) is a Functional Relational Mapping (FRM) library for Scala that makes it easy to work with relational databases. It allows you to work with stored data almost as if you were using Scala collections while at the same time giving you full control over when a database access happens and which data is transferred. You can also use SQL directly. Execution of database actions is done asynchronously, making Slick a perfect fit for your reactive applications based on Play and Akka. Several examples use Slick:
-    * [play-isolated-slick](https://github.com/playframework/play-isolated-slick): This template uses a multi-module that hides Slick 3.x behind an API layer, and does not use Play-Slick integration.  It also contains sbt-flyways and use Slick's code generator to create the Slick binding from SQL tables.
-    * [play-scala-intro](https://github.com/playframework/play-scala-intro): This template uses [Play Slick](https://www.playframework.com/documentation/%PLAY_VERSION%/PlaySlick) as part of a single Play project.
+* [Slick](http://slick.lightbend.com/docs/) is a Functional Relational Mapping (FRM) library for Scala that makes it easy to work with relational databases. It allows you to work with stored data almost as if you were using Scala collections while at the same time giving you full control over database access and data transfer. You can also use SQL directly. Database actions execute asynchronously, making Slick a perfect fit for your reactive applications based on Play and Akka. The following Play examples use Slick:
+    * [play-isolated-slick](https://developer.lightbend.com/start/?group=play&project=play-scala-isolated-slick-example-2.5.x): This project uses a multi-module that hides Slick 3.x behind an API layer, and does not use Play-Slick integration.  It also contains sbt-flyways and use Slick's code generator to create the Slick binding from SQL tables.
+    
     * [Computer Database with Play-Slick](https://github.com/playframework/play-slick/tree/master/samples/computer-database): This template uses [Play Slick](https://www.playframework.com/documentation/%PLAY_VERSION%/PlaySlick).  You will need to clone the `play-slick` project from Github and type `project computer-database-sample` in SBT to get to the sample project.
+
+* play-scala-intro [for Scala](https://developer.lightbend.com/start/?group=play&project=play-2.4.x-scala-intro) or [for Java](https://developer.lightbend.com/start/?group=play&project=play-2.4.x-java-intro): This project demonstrates how to create a simple CRUD application.
 
 * JPA This is a example template showing Play with Java Persistence API (JPA), using Hibernate Entity Manager.  It is included in the Play project itself. [play-java-intro](https://github.com/playframework/play-java-intro)
 
@@ -70,19 +78,19 @@ Play examples demonstrate how to use the folloing ORMs:
 
 * This is an example template that shows streaming responses through Comet or Server Sent Events (SSE), using Akka Streams:
 
-    * [playframework/play-streaming-scala](https://github.com/playframework/play-streaming-scala)
-    * [playframework/play-streaming-java](https://github.com/playframework/play-streaming-java)
+    * [playframework/play-streaming-scala](https://developer.lightbend.com/start/?group=play&project=play-scala-streaming-example)
+    * [playframework/play-streaming-java](https://developer.lightbend.com/start/?group=play&project=play-java-streaming-example)
 
 
 * This is an example template that shows bidirectional streaming through the WebSocket API, using Akka Streams:
-    * [playframework/play-websocket-scala](https://github.com/playframework/play-websocket-scala)
-    * [playframework/play-websocket-java](https://github.com/playframework/play-websocket-java)
+    * [playframework/play-websocket-scala](https://developer.lightbend.com/start/?group=play&project=play-scala-chatroom-example)
+    * [playframework/play-websocket-java](https://developer.lightbend.com/start/?group=play&project=play-java-chatroom-example)
 
-### Cryptography
+### Security and Cryptography
 
-This is an example template showing how to encrypt and sign data securely with [Kalium](https://github.com/abstractj/kalium):
-
-* [playframework/play-kalium](https://github.com/playframework/play-kalium)
+* Play Secure HTTP(SSL/TLS) Example uses the Java Secure Socket Extension API:
+    * [for Scala](https://developer.lightbend.com/start/?group=play&project=play-scala-tls-example)
+* Play Scala Secure Session Example shows how to encrypt and sign data securely with [Kalium](https://github.com/abstractj/kalium): [playframework/play-kalium](https://developer.lightbend.com/start/?group=play&project=play-scala-secure-session-example)
 
 ### Dependency Injection
 
@@ -90,7 +98,7 @@ This is an example template showing how to encrypt and sign data securely with [
 
 There are two examples shown here, but there are other compile time DI frameworks such as Scaldi, which has [Play integration](http://scaldi.org/learn/#play-integration) built in, and [Dagger 2](https://google.github.io/dagger/), which is written in Java.
 
-* This is an example template showing how to use manual compile time dependency injection and manual routing with the [[SIRD router|ScalaSirdRouter]], useful for minimal REST APIs and people used to Spray style routing: [playframework/play-scala-compile-di-with-tests](https://github.com/playframework/play-scala-compile-di-with-tests)
+* This is an example template showing how to use manual compile time dependency injection and manual routing with the [[SIRD router|ScalaSirdRouter]], useful for minimal REST APIs and people used to Spray style routing: [playframework/play-scala-compile-di-example]((https://developer.lightbend.com/start/?group=play&project=play-scala-compile-di-example)
 
 
 This is an example template showing compile time dependency injection using [Macwire](https://github.com/adamw/macwire).  [playframework/play-macwire-di](https://github.com/playframework/play-macwire-di)

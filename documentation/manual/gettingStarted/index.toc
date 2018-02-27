@@ -1,6 +1,6 @@
 Installing:Introduction
-NewApplication:Getting started
+NewApplication:Examples and templates
 Anatomy:Anatomy of a Play application
 PlayConsole:Using sbt with Play
 IDE:Setting-up your preferred IDE
-Tutorials:External resources
+Tutorials:Other resources

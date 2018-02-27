@@ -7,7 +7,14 @@ The Play Framework uses Scala and Akka under the hood. This endows Play applicat
 
 Play offers both Java and Scala APIs. Java developers find Play's Model-View-Controller (MVC) architecture familiar and easy to learn. Scala developers appreciate using the concise and familiar functional programming patterns. The large community using Play offers an excellent resource for getting questions answered.
 
-Play is non-opinionated about database access, and integrates with many object relational mapping (ORM) layers.  It supports Anorm, Ebean, Slick, and JPA, out-of-the-box but many customers use NoSQL or REST layers and other ORMs not mentioned here.  
+Play is non-opinionated about database access, and integrates with many object relational mapping (ORM) layers.  It supports Anorm, Ebean, Slick, and JPA, out-of-the-box but many customers use NoSQL or REST layers and other ORMs not mentioned here. 
+
+Read on to learn about:
+
+* [Choosing a build tool](#Choosing-a-build-tool)
+* [Verifying prerequisites](#Verifying-prerequisites) 
+
+Or jump to [[Examples and templates|NewApplication]]
 
 ## Choosing a build tool
 
@@ -15,7 +22,7 @@ Because Play Framework librares are available from [Maven Repository](https://mv
 
 This guide describes how to use `sbt` to develop Play applications.
 
-## Verifying Prerequisites
+## Verifying prerequisites
 
 Play requires Java SE 1.8 and we recommend that you use the latest version of `sbt`.  
 
