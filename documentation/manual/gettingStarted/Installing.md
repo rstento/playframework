@@ -1,7 +1,7 @@
 <!--- Copyright (C) 2009-2017 Lightbend Inc. <https://www.lightbend.com> -->
 # Introduction
 
-In contrast with web frameworks that were designed to support large eco-systems, such as Java EE, Play was developed by web developers&mdash;for web development. Play saves precious development time by directly supporting common tasks and hot reloading so that you can immediately view the results of your work. As a full-stack framework, it includes all of the components you need to build a web application such as an integrated HTTP server, form validation, Cross-Site Request Forgery (CSRF) protection, RESTful web services API, and more.
+In contrast with web frameworks that were designed to support large eco-systems that include much more than web development, such as Java EE, Play was developed by web developers&mdash;for web development. Play saves precious development time by directly supporting common tasks and hot reloading so that you can immediately view the results of your work. As a full-stack framework, it includes all of the components you need to build a web application such as an integrated HTTP server, form validation, Cross-Site Request Forgery (CSRF) protection, RESTful web services API, and more.
 
 Play Framework uses Scala and Akka under the hood. This endows Play applications with a stateless, non-blocking, event-driven architecture that provides horizontal and vertical scalability and uses resources more efficiently. See [Elasticity](https://developer.lightbend.com/elastic-scaling/) and [Efficient Resource Usage](https://developer.lightbend.com/efficient-resource-usage/) for more information.
 
@@ -21,6 +21,11 @@ Or jump to [[Examples and templates|NewApplication]]
 Because Play Framework libraries are available from [Maven Repository](https://mvnrepository.com/artifact/com.typesafe.play), you can use any Java build tool to build a Play project. However,   [sbt](http://www.scala-sbt.org/) (simple build tool) provides the development experience Play is known and loved for, such as routes, template compilation, and auto-reloading.  For example,  `sbt run` builds and runs an HTTP server and your application so that you can immediately view your work. 
 
 This guide describes how to use `sbt` to develop Play applications. Examples demonstrate use of a Bash command shell, but work with any shell.
+
+You can also use third-party plugins for Maven and Gradle. These are not supported by the Play team and might not always be up to date:
+
+* [Maven Play plugin](https://github.com/play2-maven-plugin/play2-maven-plugin)
+* [Gradle Play plugin](https://docs.gradle.org/current/userguide/play_plugin.html) 
 
 ## Verifying prerequisites
 
